@@ -1,4 +1,0 @@
-eggs
-ham
-eggs and ham
-spam and eggs
