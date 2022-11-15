@@ -60,16 +60,14 @@ int main()
 
                         cout << "Sorted by Last word" << endl << endl;
                     }
-                    
-                    //print contents of the array
+
+                    //now want to output fileContents into a new sorted file
+                    //this new file will be titled "sample_file_sorted.txt"
+                    ofstream sorted_file ("sample_file_sorted.txt");
                     for (string str : fileContents) {
-                        cout << str << '\n';
+                        sorted_file << str << endl;
                     }
-
-                    //now want to output fileContents into the file that was read
-
-
-
+                    sorted_file.close();
                 }
             }
             catch (...) {
